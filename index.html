@@ -16,88 +16,90 @@
 </head>
 
 <body>
-    <aside>
-        <img src="./img/MundoPet.png" alt="Logo">
-        <nav>
-            <ul class="lista-links">
-                <li>
-                    <a href="#" class="link-destaque">Publicar</a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./img/feed.png" alt="Ícone Feed">
-                        Feed
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./img/perfil.png" alt="Imagem de um gatinho">
-                        Perfil
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./img/sobrenos.png" alt="Ícone Sobre Nós">
-                        Sobre nós
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./img/sair.png" alt="Ícone Sair">
-                        Sair
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </aside>
+    <div class="wrapper">
+        <aside>
+            <img src="./img/MundoPet.png" alt="Logo">
+            <nav>
+                <ul class="lista-links">
+                    <li>
+                        <a href="#" class="link-destaque">Publicar</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/feed.png" alt="Ícone Feed">
+                            Feed
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/perfil.png" alt="Imagem de um gatinho">
+                            Perfil
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/sobrenos.png" alt="Ícone Sobre Nós">
+                            Sobre nós
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/sair.png" alt="Ícone Sair">
+                            Sair
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
 
-    <main>
-        <div class="container-upload-imagem">
-            <div class="container-imagem">
-                <img src="./img/panqueca.jpg" alt="" class="main-img">
+        <main>
+            <div class="container-upload-imagem">
+                <div class="container-imagem">
+                    <img src="./img/panqueca.jpg" alt="" class="main-img">
+                </div>
+                <button id="upload-btn">Carregar Foto</button>
+                <input type="file" id="imagem-upload" accept="image/*" class="input-upload" style="display:none">
+                <div class="container-imagem-nome">
+                    <p>image_projeto.png</p>
+                    <img src="../img/close.png" alt="close">
+                </div>
             </div>
-            <button id="upload-btn">Carregar Foto</button>
-            <input type="file" id="imagem-upload" accept="image/*" class="input-upload" style="display:none">
-            <div class="container-imagem-nome">
-                <p>image_projeto.png</p>
-                <img src="../img/close.png" alt="close">
-            </div>
-        </div>
 
-        <div class="container-descricao">
-            <h2>Nova Foto</h2>
-            <form>
-                <div>
-                    <label for="nome">Titulo da Foto</label>
-                    <input type="text" id="nome" name="nome" />
-                </div>
-                <div>
-                    <label for="descricao">Descrição</label>
-                    <textarea id="descricao"></textarea>
-                </div>
-                <div>
-                    <label for="categoria">Hashtags</label>
-                    <input type="text" id="categoria" name="categoria" />
-                </div>
-                <div>
-                    <ul class="lista-tags">
-                        <li>
-                            <p>Cachorro Salsicha</p>
-                            <img src="../img/close.png" alt="">
-                        </li>
-                        <li>
-                            <p>Cachorro adulto</p>
-                            <img src="../img/close.png" alt="">
-                        </li>
-                    </ul>
-                </div>
-                <div class="container-botoes">
-                    <button class="botao-descartar">Descartar</button>
-                    <button class="botao-publicar">Publicar</button>
-                </div>
-            </form>
-        </div>
-    </main>
+            <div class="container-descricao">
+                <h2>Nova Foto</h2>
+                <form>
+                    <div>
+                        <label for="nome">Titulo da Foto</label>
+                        <input type="text" id="nome" name="nome" />
+                    </div>
+                    <div>
+                        <label for="descricao">Descrição</label>
+                        <textarea id="descricao"></textarea>
+                    </div>
+                    <div>
+                        <label for="categoria">Hashtags</label>
+                        <input type="text" id="categoria" name="categoria" />
+                    </div>
+                    <div>
+                        <ul class="lista-tags">
+                            <li>
+                                <p>Cachorro Salsicha</p>
+                                <img src="../img/close.png" alt="">
+                            </li>
+                            <li>
+                                <p>Cachorro adulto</p>
+                                <img src="../img/close.png" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="container-botoes">
+                        <button class="botao-descartar">Descartar</button>
+                        <button class="botao-publicar">Publicar</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
 </body>
 
 </html>

@@ -15,20 +15,25 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-
 }
 
 body {
     background-color: var(--black);
     color: var(--text-color);
     font-family: var(--font-family);
-    height: 100vh;
-    display: flex;
-    align-items: start;
-    justify-self: center;
+    min-height: 100vh;
     padding: 40px 0;
-    gap: 27px;
+    display: flex;
+    justify-content: center;
+}
 
+.wrapper {
+    display: flex;
+    gap: 27px;
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 24px;
+    margin: 0 auto;
 }
 
 aside {
@@ -36,9 +41,9 @@ aside {
     border-radius: 10px;
     padding: 40px 16px;
     text-align: center;
-    height: 100vh;
-    justify-content: space-between;
-
+    height: auto;
+    width: 250px;
+    flex-shrink: 0;
 }
 
 .lista-links {
@@ -57,23 +62,17 @@ aside {
     align-items: center;
     text-decoration: none;
     font-size: 22px;
-
 }
 
 .lista-links li:first-of-type a {
     color: var(--primary-color);
-
 }
 
 .link-destaque {
     border: 1px solid var(--primary-color);
     padding: 12px 30px;
     border-radius: 8px;
-
-
 }
-
-
 
 main {
     background-color: var(--secundary-color);
@@ -81,6 +80,7 @@ main {
     padding: 32px;
     display: flex;
     gap: 24px;
+    flex: 1;
 }
 
 h2 {
@@ -111,7 +111,6 @@ textarea {
     border-radius: 4px;
     font-family: var(--font-family);
     line-height: 22.5px;
-
 }
 
 form div input {
@@ -122,8 +121,12 @@ text {
     height: 161px;
 }
 
-.lista-tags li {
+.lista-tags {
+    display: flex;
+    color: var(--black);
+}
 
+.lista-tags li {
     display: flex;
     align-items: center;
     background-color: var(--tag-color);
@@ -140,13 +143,6 @@ text {
     object-fit: contain;
     display: inline-block;
     vertical-align: middle;
-
-
-}
-
-.lista-tags {
-    display: flex;
-    color: var(--black);
 }
 
 .container-botoes {
@@ -215,7 +211,6 @@ text {
     border-radius: 8px;
     height: 100%;
     object-fit: cover;
-
 }
 
 .container-imagem {
@@ -266,7 +261,7 @@ text {
     align-items: center;
     gap: 8px;
     color: var(--secondary-color);
-    font-size: 15px
+    font-size: 15px;
 }
 
 .container-imagem-nome img {
